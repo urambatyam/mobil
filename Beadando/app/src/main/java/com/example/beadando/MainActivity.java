@@ -1,5 +1,6 @@
 package com.example.beadando;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,6 +14,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG = MainActivity.class.getName();
+    private static final int REG_KEY = 7;
+
 
     EditText userET;
 
@@ -37,5 +40,12 @@ public class MainActivity extends AppCompatActivity {
         String strcode = codeET.getText().toString();
 
         Log.i(LOG_TAG, "felhasználó: "+struser+" jelszó: "+strcode);
+    }
+
+    public void regist(View view) {
+        Intent intent = new Intent(this, RegistrionActivity.class);
+        intent.putExtra("REG_KEY",REG_KEY);
+        startActivity(intent);
+        // TODO
     }
 }
