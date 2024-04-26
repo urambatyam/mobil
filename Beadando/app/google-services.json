@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1062255482441",
+    "project_id": "mobilalkfej-2024",
+    "storage_bucket": "mobilalkfej-2024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062255482441:android:4de93057b138e484e61198",
+        "android_client_info": {
+          "package_name": "com.example.beadando"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnZpXdvbbJr6vi9s_XJSb-aaz3z9NA_SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -42,9 +42,19 @@
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
         android:onClick="login"
         android:text="@string/login" />
+
+    <Button
+        android:id="@+id/buttonregist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="regist"
+        android:text="@string/regist" />
 
 </LinearLayout>

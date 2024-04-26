@@ -7,4 +7,71 @@
     <string name="back">Vissza</string>
     <string name="email">Email</string>
     <string name="repassword">Jelszó megerősítése</string>
+    <string name="fill">Kitöltés</string>
+    <string name="logout">Kijelenkezés</string>
+    <string name="delete">Válaszok törlése</string>
+    <string name="modify">Válaszok modósítása</string>
+    <string name="introduction">Ebben a kérdöívben a tanterv felépítésével kapcsolatban kérdezük az Infromatika szakos diákoat, hogy a legoptimális tantervet állithsúk elő számotokra.</string>
+    <string name="subhead1">Általános Információk</string>
+    <string name="subhead2">Előadások</string>
+    <string name="subhead3">Gyakorlatok</string>
+    <string name="question1">Mi a neme?</string>
+    <string name="question2">Melyik évét tölti jellenleg?</string>
+    <string name="question3">Milyik szakon tanul?</string>
+    <string name="question4">Milyen gyakran jár be az előadásokra?</string>
+    <string name="question5">Hogy érzi, menyit fogfel a tananyagból egy előadás végig hallgatása után?</string>
+    <string name="question6">Többnyire hogyan készül fel a vizsgákra?(Több vélaszt is megaddhat)</string>
+    <string name="question7">Mi okoza önnek a legnagyobb nehézséget a vizsgára való felkészülésben?</string>
+    <string name="question8">Hogy érzi, menyit fogfel a tananyagból egy gyakorlat után?</string>
+    <string name="question9">Többnyire hogyan készül fel a ZH-ákra?</string>
+    <string name="question10">Mi okoza önnek a legnagyobb nehézséget a ZH-ákra való felkészülésben?</string>
+    <string name="cancel">Mégse</string>
+    <string name="send">Küldés</string>
+    <string name="question10e">Túl hosszú a tananyag.</string>
+    <string name="question10d">Lusta vagyok.</string>
+    <string name="question10c">Feleslegesnem érzem az anyagot és ezért nem bírom megtanulni.</string>
+    <string name="question10b">A segédanyagok (pl.: videók vagy jegyzet) hiánya.</string>
+    <string name="question10a">A gyakorlat hossza. Túlsok minden hagzik el túl rövid idő alatt nem tudom követni.</string>
+    <string name="question8a">Mindent teljesen megértek a legaprób részletek ig.</string>
+    <string name="question8b">Nagy körvonalkban felfogom de részleteiben már nem.</string>
+    <string name="question8c">Szinte semmit.</string>
+    <string name="question8d">Nem tudom mert nem járokbe.</string>
+    <string name="question7e">Túl hosszú a tananyag.</string>
+    <string name="question7d">Lusta vagyok.</string>
+    <string name="question7c">Feleslegesnem érzem az anyagot és ezért nem bírom megtanulni.</string>
+    <string name="question7b">A segédanyagok (pl.: videók vagy jegyzet) hiánya.</string>
+    <string name="question7a">Az előadás hossza. Nem tudok másfélórán keresztül összpontosítani.</string>
+    <string name="question5d">Nem tudom mert nem járokbe.</string>
+    <string name="question5c">Szinte semmit.</string>
+    <string name="question5b">Nagy körvonalkban felfogom de részleteiben már nem.</string>
+    <string name="question5a">Mindent teljesen megértek a legaprób részletekig.</string>
+    <string name="question4d">Soha nem járokbe.</string>
+    <string name="question4c">Csak az első pár héten járokbe.</string>
+    <string name="question4b">Néha bejárok.</string>
+    <string name="question4a">Mindig bejárok.</string>
+    <string name="question2f">Több...</string>
+    <string name="question2e">Ötödik</string>
+    <string name="question2d">Negyedik</string>
+    <string name="question2c">Harmadik</string>
+    <string name="question2b">Második</string>
+    <string name="question2a">Első</string>
+    <string name="question1b">Férfi</string>
+    <string name="question1a">Nő</string>
+    <string name="question6a">Az előadásokra való bejárás elég felkészülés nekem.</string>
+    <string name="question6b">Elolvasom otthon az előadás diáit.</string>
+    <string name="question6c">Elolvasom/megnézem az előadáshoz feltöltött segédanyagokat.</string>
+    <string name="question6d">Forumokon olvasok utána (pl.: Discord)</string>
+    <string name="question9a">A gyakorlatokra való bejárás elég felkészülés nekem.</string>
+    <string name="question9b">Otthon gyakorlok.</string>
+    <string name="question9c">Elolvasom/megnézem az gyakorlathoz feltöltött segédanyagokat.</string>
+    <string name="question9d">Forumokon olvasok utána (pl.: Discord)</string>
+    <string name="mobil">Telefonszám</string>
+    <string name="save">Mentés</string>
+    <string name="hello">Helló!</string>
+    <string-array name="majors">
+        <item>Programtervező Informatikus</item>
+        <item>Mérnök Informatikus</item>
+        <item>Gazdasági Infromatika</item>
+        <item>Üzemmérnök</item>
+    </string-array>
 </resources>
