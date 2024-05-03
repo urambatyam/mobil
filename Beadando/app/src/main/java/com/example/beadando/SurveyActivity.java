@@ -2,6 +2,7 @@ package com.example.beadando;
 
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -358,6 +359,8 @@ public class SurveyActivity extends AppCompatActivity implements AdapterView.OnI
     public void send(View view) {
         surveysdata.add(pre()).addOnSuccessListener(documentReference -> Log.d(LOG_TAG, "Új kérdőív jött létre")).addOnFailureListener(e -> Log.w(LOG_TAG, "Nem jött létre új kérdőív", e));
         nh.send("Köszönjűk hogy kitöltöted a Kérdőívünket!");
+        Intent resultIntent = new Intent();
+        setResult(RESULT_OK, resultIntent);
         finish();
     }
 

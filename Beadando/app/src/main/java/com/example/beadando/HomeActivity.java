@@ -25,6 +25,8 @@ public class HomeActivity extends AppCompatActivity {
     private static final String LOG_TAG = HomeActivity.class.getName();
     private static final int MODIFY_KEY = 7;
 
+    private static final int SURVEY_REQUEST_CODE = 100;
+
     private FirebaseUser user;
     private FirebaseFirestore firestore;
     //private CollectionReference userdata;
@@ -56,7 +58,6 @@ public class HomeActivity extends AppCompatActivity {
                         Button buttonFill = findViewById(R.id.buttonfill);
                         Button buttonModify = findViewById(R.id.buttonmodify);
                         Button buttonDelete = findViewById(R.id.buttondelete);
-                        // Ellenőrizd, hogy van-e találat
                         if (!queryDocumentSnapshots.isEmpty()) {
                             buttonFill.setVisibility(View.GONE);
                             buttonModify.setVisibility(View.VISIBLE);
@@ -80,10 +81,27 @@ public class HomeActivity extends AppCompatActivity {
 
 
     }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == SURVEY_REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                // A SurveyActivity visszatért eredménnyel
+                // Most megváltoztathatod a fillButton láthatóságát GONE-ra
+                Button buttonFill = findViewById(R.id.buttonfill);
+                Button buttonModify = findViewById(R.id.buttonmodify);
+                Button buttonDelete = findViewById(R.id.buttondelete);
+                buttonFill.setVisibility(View.GONE);
+                buttonModify.setVisibility(View.VISIBLE);
+                buttonDelete.setVisibility(View.VISIBLE);
+            }
+        }
+    }
+
 
     public void fill(View view) {
         Intent intent = new Intent(this, SurveyActivity.class);
-        startActivity(intent);
+        startActivityForResult(intent, SURVEY_REQUEST_CODE);
     }
 
     public void modify(View view) {
@@ -108,9 +126,9 @@ public class HomeActivity extends AppCompatActivity {
         Button buttonFill = findViewById(R.id.buttonfill);
         Button buttonModify = findViewById(R.id.buttonmodify);
         Button buttonDelete = findViewById(R.id.buttondelete);
-        buttonFill.setVisibility(View.GONE);
-        buttonModify.setVisibility(View.VISIBLE);
-        buttonDelete.setVisibility(View.VISIBLE);
+        buttonFill.setVisibility(View.VISIBLE);
+        buttonModify.setVisibility(View.GONE);
+        buttonDelete.setVisibility(View.GONE);
     }
 
     public void logout(View view) {
